@@ -27,3 +27,9 @@ input[type = "radio"], input[type="checkbox"]{
     width: auto;
 
 }
+
+button {
+    display: block;
+    margin: auto;
+
+}
