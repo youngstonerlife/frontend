@@ -1,12 +1,16 @@
 const button = document.getElementById("btn");
+const message =document.getElementById("message")
 
 button.addEventListener('click', function () {
     const name = document.getElementById("name").value;
 
     if (name.trim() === "") {
-        alert("Please enter name");
+        message.textContent = 'Please enter name';
+        message.style.color = 'red';
+
     } else {
-        alert('hello, ' + name);
+        message.textContent = 'Hello, ' + name;
+        message.style.color = 'green';
         button.textContent = 'U clicked me';
     }
 
