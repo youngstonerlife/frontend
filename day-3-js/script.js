@@ -5,6 +5,7 @@ button.addEventListener('click', function () {
     const name = document.getElementById("name").value;
 
     if (name.trim() === "") {
+
         message.textContent = 'Please enter name';
         message.style.color = 'red';
 
