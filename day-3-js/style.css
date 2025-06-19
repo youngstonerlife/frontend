@@ -1,8 +1,6 @@
 body {
     background-color: rgb(255, 255, 255);
     text-align: center;
-}
-head {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
@@ -12,3 +10,8 @@ button, input {
     margin-top: 10px;
     font-size: 16px;
 }
+
+p {
+        font-size: xx-large;
+        font-style: normal;
+}   
