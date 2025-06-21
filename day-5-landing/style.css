@@ -1,0 +1,167 @@
+    html {
+      height: 100%;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      background: #f4f4f4;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 400px;
+    height: 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
+
+  .info {
+    flex: 1;
+
+  }
+
+  .info h2 {
+    margin: 0;
+  }
+  .info p {
+      color: #313131;
+      font-family: sans-serif;
+  }
+
+  button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
+  button:hover {
+    background: #1565c0;
+    transition: background 0.3s ease;
+  }
+
+  header{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    top: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  header nav {
+    display: flex;
+
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  header nav a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+  main {
+    flex: 1;
+    
+  }
+
+  .hero {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%; 
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    text-align: center;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
