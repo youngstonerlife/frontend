@@ -6,7 +6,7 @@
       display: flex;
       flex-direction: column;
       font-family: sans-serif;
-      background: #f4f4f4;
+      background: #2b2b2b;
       height: 100%;
       width: 100%;
       margin: 0;
@@ -14,7 +14,7 @@
   }
 
   .cards {
-      width: 100%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,7 +23,7 @@
 
   .card {
     display: flex;
-    background: white;
+    background: rgb(66, 66, 66);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -31,6 +31,7 @@
     height: 150px;
     gap: 20px;
     flex-wrap: wrap;
+    color: #ffffff;
   }
 
   .card img {
@@ -43,7 +44,7 @@
 
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
   }
 
@@ -56,14 +57,14 @@
     margin: 0;
   }
   .info p {
-      color: #313131;
+      color: #e4e4e4;
       font-family: sans-serif;
   }
 
   button {
     margin-top: auto;
     padding: 10px 15px;
-    background: #1e88e5;
+    background: #b66340;
     color: white;
     border: none;
     border-radius: 8px;
@@ -72,15 +73,13 @@
   }
 
   button:hover {
-    background: #1565c0;
+    background: #945134;
     transition: background 0.3s ease;
   }
 
   header{
     display: flex;
-    background-color: #ffffff;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #444444;
     padding: 20px 40px;
     top: 0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -90,14 +89,15 @@
     display: flex;
 
     justify-content: space-around;
-    width: 100%;
+    width: 40%;
   }
 
   header nav a {
   text-decoration: none;
-  color: #1f1f1f;
+  color: #ffffff;
   font-weight: 500;
   margin: 0 15px;
+  font-size: medium;
 }
 
 header nav a:hover {
@@ -106,20 +106,47 @@ header nav a:hover {
 
   main {
     flex: 1;
+    display: flex;
+    align-items: center;
     
   }
 
   .hero {
-    background-color: #f4f4f4;
+    background-color: #2b2b2b;
+    background-image: url('https://png.pngtree.com/png-vector/20220723/ourmid/pngtree-animal-shelter-abstract-concept-vector-illustration-png-image_6045697.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    width: 50%;
+    color: #313131;
+    height: 80%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .box {
+  background-color: rgba(148,81,53,0.8);
+  padding: 10px;
+  border-radius: 70px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 5px ;
+
   }
 
   .hero h2 {
-  font-size: 28px;
+  font-size: 100px;
   margin-bottom: 10px;
+}
+
+.hero p{
+  font-size: 20px;
+  color: #dddddd;
+  padding: 30px;
+  margin: 50px;
 }
 
   footer {
