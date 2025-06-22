@@ -47,6 +47,7 @@
   .cardopen {
   padding: 20px;
   border-radius: 12px;
+  min-width: 250px;
   max-width: 400px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -68,6 +69,11 @@
   object-fit: cover;
   padding: 5px;
   }
+
+  .cardopen .infoopen h2{
+    font-size: 30px;
+  }
+
 
 .cardopens {
   display: flex;
@@ -231,7 +237,7 @@ header nav a:hover {
   height: 700px;
   color: #ffffff;
   margin-right: 50px;
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: center;
 }
 
