@@ -1,0 +1,276 @@
+    html {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      background: #2b2b2b;
+      height: auto;
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  .cards {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    background: rgb(66, 66, 66);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 400px;
+    height: 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #ffffff;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .cardopen {
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  background: rgb(66, 66, 66);
+  }
+
+  .cardopen:hover {
+  z-index: 999;
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+  .cardopen img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 5px;
+  }
+
+  .cardopen .infoopen h2{
+    font-size: 30px;
+  }
+
+
+.cardopens {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+}
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+  }
+
+  .info {
+    flex: 1;
+
+  }
+
+  .info h2 {
+    margin: 0;
+  }
+  .info p {
+      color: #e4e4e4;
+      font-family: sans-serif;
+  }
+
+  button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background: #b66340;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
+  button:hover {
+    background: #945134;
+    transition: background 0.3s ease;
+  }
+
+  header{
+    position: fixed;
+    display: flex;
+    background-color: #444444;
+    padding: 20px 40px;
+    top: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+
+    justify-content: space-around;
+    width: 40%;
+  }
+
+  header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 15px;
+  font-size: medium;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+  main {
+    flex: 1;
+
+  }
+
+  .home {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    padding: 60px;
+  }
+  .hero {
+    background-color: #2b2b2b;
+    background-image: url('https://png.pngtree.com/png-vector/20220723/ourmid/pngtree-animal-shelter-abstract-concept-vector-illustration-png-image_6045697.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    width: 50%;
+    color: #313131;
+    height: 80%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 100%;
+    gap: 30px;
+  }
+
+.desc {
+  background-color: #444444;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 5px ;
+}
+.about h2 {
+  color: #ffffff;
+  font-size: 60px;
+}
+.about div p{
+  padding: 15px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+  .box {
+  background-color: rgba(148,81,53,0.8);
+  padding: 10px;
+  border-radius: 70px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 5px ;
+  color: #ffffff;
+
+  }
+
+  .hero h2 {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+.hero p{
+  font-size: 20px;
+  color: #dddddd;
+  padding: 30px;
+  margin: 50px;
+}
+
+.row-classes {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #444444;
+  width: 50%;
+  font-size: 20px;
+  box-shadow:0 12px 24px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  padding: 20px;
+  height: 700px;
+  color: #ffffff;
+  margin-right: 50px;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.contact input {
+  width: 60%;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #444444;
+  border-color: #2b2b2b;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical; 
+  color: #ffffff;
+}
+
+.contact button {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.contact input::placeholder{
+  color: #ccc;
+}
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
