@@ -1,0 +1,63 @@
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #1e88e5;
+  margin-top: 20px;
+  transform: scale(1.5);
+  border-radius: 50%;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.donate {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.donate input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.donate button {
+  padding: 10px 20px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.donate button:hover {
+  background: #1565c0;
+}
+
