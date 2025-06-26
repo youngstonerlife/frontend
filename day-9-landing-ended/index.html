@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>    
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="home">
+            <section class="hero">
+                <h2>Welcome!</h2>
+                <div class="box">
+                <p>Paws & Hope is a non-profit animal shelter dedicated to rescuing, rehabilitating, and rehoming abandoned and stray animals.  
+We believe every pet deserves love, care, and a forever home.</p>
+</div><br>
+                <button>Get started</button>
+            </section>
+            <section class="cards" id="cards">
+            </section></section><br>
+            <div class="row-classes">
+            <section id="about" class="about">  
+                <h2>About our shelter</h2>
+                <div class="desc">
+                    <p>At Paws & Hope, we rescue, care for, and rehome abandoned and mistreated animals.  
+        Our mission is simple: give every pet a second chance at love and life.  
+        With your support, we’ve already helped over 500 animals find their forever homes. </p>
+                </div>
+        
+
+                <div class="cardopens">
+                    <div class="cardopen">
+                        <img src="https://i.fbcd.co/products/original/9726431d1a9ca9952c6d33d4eec4de301e72928dc98342a87bb5130891e59661.jpg" alt="mission">
+                        <div class="infoopen">
+                            <h2>Our mission</h2>
+                            <p>Learn about our mission</p>
+                            <button data-target="modal1">More Info</button>
+                            
+                        </div>
+                        </div>
+                    <div class="cardopen">
+                        <img src="https://media.istockphoto.com/id/1163776016/vector/black-and-white-simple-logo-with-animal-paw-in-heart.jpg?s=612x612&w=0&k=20&c=DWvJVeUMP-mx44BmRAFWCvoMwtSg9UVNREWFu-dI1Rw=" alt="mission">
+                            <div class="infoopen">
+                                <h2>Adopting pets</h2>
+                                <p>Learn about how to adopt</p>
+                                <button data-target="modal2">More Info</button>
+                            </div>
+                    </div>
+                    <div class="cardopen">
+                    <img src="https://t3.ftcdn.net/jpg/08/58/45/22/360_F_858452289_YtZytUgs4JbbtrD24fwbhQCwxIiadqD6.jpg" alt="mission">
+                    <div class="infoopen">
+                        <h2>Shelter foundation</h2>
+                        <p>Learn about our shelter's foundatiom</p>
+                        <button data-target="modal3">More Info</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="popup" id="modal1">
+                    <div class="popup_body">
+                        <div class="popup_content">
+                            <h2>Our mission</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="modal2">
+                    <div class="popup_body">
+                        <div class="popup_content">
+                            <h2>Adopting pets</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="modal3">
+                    <div class="popup_body">
+                        <div class="popup_content">
+                            <h2>Shelter foundatiom</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+
+        <section class="contact" id="contact">
+            <h1>Want to adopt one?</h1><br>
+            <form onsubmit="submitForm(event)">
+            <label>Name:<br><input type="text" placeholder="Your name" required></label><br><br>
+            <label>Phone number:<br><input type="text" placeholder="Your phone number" required></label><br><br>
+            <label>Location:<br><input type="text" placeholder="Your Location" required></label>
+            <button type="submit">Send request</button>
+            </form>
+        </section>
+        </div>
+        </main>
+        <footer>
+            <p>© 2025 Youngstonerlife</p>
+        </footer>
+            <script src="script.js"></script>
+    </body>
+
+</html>
