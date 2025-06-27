@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bike</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-links">
+          <a href="#home">HOME</a>
+          <a href="#details">DETAILS</a>
+        </div>
+        <div class="logo">
+          <img src="pic/logo-new.png" alt="Logo" />
+        </div>
+        <div class="right-links">
+          <a href="#contact">PURCHASE</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <img src="pic/bike.jpg" alt="bike" class="img bike-img" />
+
+      <section class="hero zoom-block" data-part="def" id="home">
+        <div class="text-block">
+          <div class="line first-line">
+            <p><span class="small">AN</span> <span class="big">EXHILARATINGLY</span></p>
+          </div>
+          <div class="line second-line">
+            <p class="big">FAST <span class="small">AND</span> LIGHT</p>
+          </div>
+          <div class="line third-line">
+            <p><span class="big">ROAD RACE</span> <span class="small">EXPERIENCE</span></p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="buy">BUY NOW ●</button>
+          <button class="details" href="#details">DETAILS ●</button>
+        </div>
+      </section>
+
+      <div class="zoom-block zblock" data-part="wheel" id="details">
+        <div class="zoom-content">
+            <h2 class="zoom-title">Carbon Wheels</h2>
+            <p class="zoom-desc">
+            High-performance carbon wheels designed for maximum aerodynamics, stiffness, and speed.
+            </p>
+            <button class="zoom-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="zoom-block zblock" data-part="handle">
+        <div class="zoom-content">
+            <h2 class="zoom-title">Ergonomic Handlebar</h2>
+            <p class="zoom-desc">
+            Designed for ultimate control and comfort, our ergonomic handlebars minimize fatigue on long rides while giving you precision steering.
+            </p>
+            <button class="zoom-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="zoom-block zblock" data-part="seat">
+        <div class="zoom-content">
+            <h2 class="zoom-title">Ultra-Light Saddle</h2>
+            <p class="zoom-desc">
+            Experience unmatched comfort with our gel-infused saddle — engineered for performance without compromising weight or style.
+            </p>
+            <button class="zoom-btn">Learn More</button>
+        </div>
+      </div><br><br>
+
+      <div class="zoom-block purchase-info" data-part="contact" id="contact">
+        <h2 class="purchase-title">READY TO RIDE?</h2>
+        <p class="purchase-price">1,799$</p>
+        <button class="buy-now-button" data-target="modal">Purchase Now</button>
+        
+        <div class="chars">
+          <div class="char">
+            <img src="https://www.svgrepo.com/show/375235/warranty-term.svg">
+            <div class="info">
+              <h2>2-Year Warranty</h2>
+              <p>Full coverage on frame and components</p>
+            </div>
+          </div>
+            <div class="char">
+            <img src="https://static.thenounproject.com/png/2526085-200.png">
+            <div class="info">
+              <h2>Free Shipping</h2>
+              <p>Delivered within 5–7 business days worldwide.</p>
+            </div>
+            </div>
+            <div class="char">
+            <img src="https://cdn-icons-png.flaticon.com/512/95/95454.png">
+            <div class="info">
+              <h2>Secure Checkout</h2>
+              <p>256-bit SSL encryption & trusted payment methods</p>
+            </div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+          <div class="popup_body">
+              <div class="popup_content">
+                <h2>Want to buy one?</h2>
+                <form onsubmit="submitForm(event)">
+                  <label>Name:<br><input type="text" placeholder="Your name" required></label><br><br>
+                  <label>Phone number:<br><input type="text" placeholder="Your phone number" required></label><br><br>
+                  <label>Location:<br><input type="text" placeholder="Your Location" required></label>
+                  <button type="submit">Send request</button>
+                </form>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
