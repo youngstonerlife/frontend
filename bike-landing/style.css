@@ -470,3 +470,106 @@ width: 100px;
   font-size: 14px;
   color: #444;
 }
+
+@media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .left-links, .right-links {
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px;
+        }
+
+        .logo img {
+          width: 120px;
+        }
+
+        .text-block {
+          width: 100%;
+          text-align: center;
+        }
+
+        .big {
+          font-size: 40px;
+        }
+
+        .small {
+          font-size: 18px;
+        }
+
+        .first-line, .second-line, .third-line, .buttons {
+          position: static;
+          margin: 20px auto;
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .buy, .details {
+          width: 80%;
+          margin: 10px 0;
+          font-size: 18px;
+        }
+
+        .img {
+          display: none;
+        }
+
+        .zblock {
+          margin-right: 0;
+          margin-left: 0;
+          max-width: 95%;
+          padding: 20px;
+        }
+
+        .zoom-title {
+          font-size: 30px;
+        }
+
+        .zoom-desc {
+          font-size: 18px;
+        }
+
+        .chars {
+          flex-direction: column;
+          width: 100%;
+          gap: 20px;
+        }
+
+        .char {
+          max-width: 95%;
+        }
+
+        .popup_body {
+          max-width: 90%;
+          padding: 20px;
+          margin-top: 60px;
+        }
+
+        .popup_content h2 {
+          font-size: 30px;
+        }
+
+        .popup_content input {
+          font-size: 16px;
+        }
+
+        .popup_content button {
+          width: 100%;
+          font-size: 16px;
+        }
+
+        .purchase-title {
+          font-size: 36px;
+        }
+
+        .purchase-price {
+          font-size: 40px;
+        }
+      }
