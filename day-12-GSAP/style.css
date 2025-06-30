@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px;
+}
+
+.intro {
+  font-size: 50px;
+  text-align: center;
+  background: #000;
+}
+
+.intro span {
+  color: cyan;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.grid-item {
+  background: #1a1a1a;
+  padding: 60px;
+  font-size: 28px;
+  border-radius: 20px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.pin-section {
+  height: 100vh;
+  background: #222;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
